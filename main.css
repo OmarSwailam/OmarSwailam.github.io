@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Noto Sans Display';
-    src: url('/static/fonts/NotoSansDisplay-Light.ttf') format('truetype');
+    src: url('./fonts/NotoSansDisplay-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Raleway-Regular';
-    src: url('/static/fonts/Raleway-Regular.ttf') format('truetype');
+    src: url('./fonts/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url('/static/fonts/Montserrat.ttf') format('truetype');
+    src: url('./fonts/Montserrat.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
