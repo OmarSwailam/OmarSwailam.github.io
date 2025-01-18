@@ -1,10 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("theme-toggle");
+  const toggleButton = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
+  const root = document.documentElement;
 
-    toggleButton.addEventListener("click", () => {
-      document.documentElement.classList.toggle("light-mode");
-    });
+  toggleButton.addEventListener("click", () => {
+    if (root.classList.contains("light-mode")) {
+      root.classList.remove("light-mode");
+      themeIcon.classList.remove("bi-sun-fill");
+      themeIcon.classList.add("bi-moon-fill");
+    } else {
+      root.classList.add("light-mode");
+      themeIcon.classList.remove("bi-moon-fill");
+      themeIcon.classList.add("bi-sun-fill");
+    }
   });
 
   // List of sentences

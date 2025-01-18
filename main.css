@@ -6,17 +6,45 @@
 }
 
 :root {
-  --primary-color: #9c27b0; /* Vibrant Purple */
+  --primary-color: #237EA8;
   --cursor: var(--primary-color);
-  --background-color: #252525; /* Medium Dark Background */
-  --text-color: #f9f9f9; /* Light Text */
+  --background-color: #1D1E20;
+  --text-color: #f9f9f9;
 }
 
 :root.light-mode {
-  --primary-color: #9c27b0; /* Vibrant Purple */
+  --primary-color: #237EA8;
   --cursor: var(--primary-color);
-  --background-color: #f9f9f9; /* Light Background */
-  --text-color: #333; /* Dark Text */
+  --background-color: #E0E0E0;
+  --text-color: #1D1E20;
+}
+
+.btn-theme {
+  margin-left: auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1050;
+}
+
+.btn-theme:hover {
+  color: var(--primary-color);
+}
+
+#theme-toggle i {
+  font-size: 1.5rem;
+  color: inherit;
 }
 
 body {
@@ -76,6 +104,11 @@ h1 {
   padding: 0;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar-nav li {
   text-align: center;
   margin: 0 auto;
