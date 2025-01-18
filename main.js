@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  # TODO: Single Page Application (SPA)
-  
+  // TODO: Single Page Application (SPA)
+
   // toggle theme
   const toggleButton = document.getElementById("theme-toggle");
   const themeIcon = document.getElementById("theme-icon");
