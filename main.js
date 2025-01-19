@@ -1,5 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // TODO: Single Page Application (SPA)
+  // SPA
+  const homeButton = document.querySelector("#home-button");
+  const projectsButton = document.querySelector("#projects-button");
+  const aboutButton = document.querySelector("#about-button");
+
+  const homePage = document.querySelector("#home-page");
+  const projectsPage = document.querySelector("#projects-page");
+  const aboutPage = document.querySelector("#about-page");
+
+  function hideAllPages() {
+    homePage.style.display = "none";
+    projectsPage.style.display = "none";
+    aboutPage.style.display = "none";
+  }
+
+  function showPage(page) {
+    hideAllPages();
+    page.style.display = "block";
+  }
+
+  homeButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    showPage(homePage);
+  });
+
+  projectsButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    showPage(projectsPage);
+  });
+
+  aboutButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    showPage(aboutPage);
+  });
+
+  showPage(homePage);
 
   // toggle theme
   const toggleButton = document.getElementById("theme-toggle");
@@ -18,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Text animation
+  
   // List of sentences
   var _CONTENT = [
     "Backend developer",
