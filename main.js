@@ -19,22 +19,35 @@ document.addEventListener("DOMContentLoaded", function () {
     page.style.display = "block";
   }
 
+  function removeActiveClass() {
+    homeButton.classList.remove("active");
+    projectsButton.classList.remove("active");
+    aboutButton.classList.remove("active");
+  }
+
   homeButton.addEventListener("click", (event) => {
     event.preventDefault();
+    removeActiveClass();
+    homeButton.classList.add("active");
     showPage(homePage);
   });
 
   projectsButton.addEventListener("click", (event) => {
     event.preventDefault();
+    removeActiveClass();
+    projectsButton.classList.add("active");
     showPage(projectsPage);
   });
 
   aboutButton.addEventListener("click", (event) => {
     event.preventDefault();
+    removeActiveClass();
+    aboutButton.classList.add("active");
     showPage(aboutPage);
   });
 
   showPage(homePage);
+  homeButton.classList.add("active");
 
   // toggle theme
   const toggleButton = document.getElementById("theme-toggle");
@@ -54,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Text animation
-  
+
   // List of sentences
   var _CONTENT = [
     "Backend developer",

@@ -148,14 +148,7 @@ h1 {
   color: var(--primary-color) !important;
 }
 
-.navbar a.nav-link.active::before,
 .navbar a.nav-link.active:hover::before {
-  width: 100%;
-  left: 0;
-}
-
-.navbar a.nav-brand.active::before,
-.navbar a.nav-brand.active:hover::before {
   width: 100%;
   left: 0;
 }
@@ -176,9 +169,6 @@ h1 {
   align-items: center;
 }
 
-.nav-brand {
-  font-weight: bold;
-}
 
 .navbar-nav .nav-item.active a {
   color: var(--primary-color) !important;
