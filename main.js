@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const root = document.documentElement;
 
   toggleButton.addEventListener("click", () => {
-    if (root.classList.contains("light-mode")) {
-      root.classList.remove("light-mode");
+    if (root.classList.contains("dark-mode")) {
+      root.classList.remove("dark-mode");
       themeIcon.classList.remove("bi-sun-fill");
       themeIcon.classList.add("bi-moon-fill");
     } else {
-      root.classList.add("light-mode");
+      root.classList.add("dark-mode");
       themeIcon.classList.remove("bi-moon-fill");
       themeIcon.classList.add("bi-sun-fill");
     }

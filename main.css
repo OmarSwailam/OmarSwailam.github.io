@@ -8,15 +8,15 @@
 :root {
   --primary-color: #237EA8;
   --cursor: var(--primary-color);
-  --background-color: #1D1E20;
-  --text-color: #f9f9f9;
-}
-
-:root.light-mode {
-  --primary-color: #237EA8;
-  --cursor: var(--primary-color);
   --background-color: #E0E0E0;
   --text-color: #1D1E20;
+}
+
+:root.dark-mode {
+  --primary-color: #237EA8;
+  --cursor: var(--primary-color);
+  --background-color: #1D1E20;
+  --text-color: #f9f9f9;
 }
 
 .btn-theme {
